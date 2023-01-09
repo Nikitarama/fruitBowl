@@ -1,6 +1,6 @@
 <template>
   <div class="Home">
-    <img alt="Vue logo" src="../assets/logo.png">
+    <img alt="Vue logo" src="../assets/flat-fruit-collection.webp" style="width:400px ">
     <h2>Fruit Bowl: Fruit & Veg site</h2>
     <p>Buy the freshest produce for a good price!!</p>
     <HelloWorld msg="Welcome to Your Vue.js App"/>
