@@ -2,13 +2,24 @@
   <nav>
     <router-link to="/home">Home</router-link> |
     <router-link to="/about">About</router-link> |
-    <router-link to="/products">Products</router-link> |
-    <router-link to="/login">Login</router-link>
+    <router-link to="/resume">Resume</router-link> |
+    <router-link to="/testimonials">Testimonials</router-link> |
+    <router-link to="/contact">Contact</router-link>
   </nav>
   <router-view/>
+
+  <footer class="footer-icons">
+                <p>Nikita Ramawoothar © | 2023</p>
+                <a href="#"><i class="fab-fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-twitch"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a> 
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+  </footer>
+
 </template>
 
-<style>
+<style scoped>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -17,8 +28,13 @@
   color: #2c3e50;
 }
 
+body {
+  overflow:hidden;
+}
+
 nav {
   padding: 30px;
+  margin-left: 550px;
 }
 
 nav a {
@@ -27,6 +43,23 @@ nav a {
 }
 
 nav a.router-link-exact-active {
-  color: #42b983;
+  color: #75d7ab;
 }
+
+footer {
+  display: flex;
+  gap: 40px;
+  margin-top: 20px;
+  margin-left: 0px;
+  background-color: rgb(215, 231, 245);
+}
+
+.footer-icons a {
+  margin: -800px;
+  margin-top: 0px;
+  font-size: 25px;
+  margin-left: 675px;
+  padding: -0px;
+}
+
 </style>

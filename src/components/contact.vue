@@ -4,12 +4,12 @@
 
 
 <script>
-import login from '@/components/login.vue'
+import contact from '@/components/contact.vue'
 
 export default {
-  name: 'login',
+  name: 'contact',
   components: {
-    login
+    contact
   }
 }
 

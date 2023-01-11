@@ -5,12 +5,12 @@
 </template>
 
 <script>
-import products from '@/components/products.vue'
+import resume from '@/components/resume.vue'
 
 export default {
-  name: 'products',
+  name: 'resume',
   components: {
-    products
+    resume
   }
 }
 
