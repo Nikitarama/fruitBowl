@@ -7,37 +7,22 @@
             developer in the future.
         </h5> <div class="circle"></div>
     
-  </div> <!--
+  </div> 
     
         
-        <div><h1>I am Nikita Ramawoothar</h1> <div class="circle"></div> </div>
-        <div><h5>
-            and I'm an 
-            aspiring web developer, and hopefully game 
-            developer in the future.
-        </h5></div> 
-    
-
-    <div>
-                <p>Nikita Ramawoothar © | 2023</p>
-                <a href="#"><i class="fab-fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-twitch"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a> 
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-github"></i></a></div> -->
-    
+      
 </template>
 
 <script>
 // @ is an alias to /src
-// import HelloWorld from '@/components/HelloWorld.vue'
+import HelloWorld from '@/components/HelloWorld.vue'
 
-// export default {
-//   name: 'HomeView',
-//   components: {
-//     HelloWorld
-//   }
-// }
+export default {
+  name: 'HomeView',
+  components: {
+    HelloWorld
+  }
+}
 </script>
 
 <style scoped>

@@ -2,8 +2,9 @@
     <div class="form">
         <h1>Fill out the form: </h1>
         
-    <form>
-<div class="mb-3">
+<form>
+  <div class="mb-3">
+    <!-- <form action="https://formspree.io/f/xeqwqbnr" method="post" role="form" class="formspree-form"> -->
     <label for="exampleInputEmail1" class="form-label">Email address</label>
     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
     <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
@@ -17,7 +18,33 @@
     <label class="form-check-label" for="exampleCheck1">Check me out</label>
   </div>
   <button type="submit" class="btn btn-primary">Submit</button>
-</form>
-        
-    </div>
+  </form>
+
+</div>
+
 </template>
+
+
+<script>
+
+</script>
+
+
+<style scoped>
+
+.form {
+  margin-top: 100px;
+  margin-left: 500px;
+  width: 600px;
+}
+
+.form h1 {
+  margin-bottom: 10px;
+  padding-left: 100px;
+  font-size: 50px;
+  background-color: rgb(183, 107, 238);
+  border: 5px solid rgb(200, 121, 255);
+  color: aliceblue;
+}
+
+</style>

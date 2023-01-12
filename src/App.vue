@@ -1,10 +1,20 @@
 <template>
   <nav>
-    <router-link to="/home">Home</router-link> |
-    <router-link to="/about">About</router-link> |
-    <router-link to="/resume">Resume</router-link> |
-    <router-link to="/testimonials">Testimonials</router-link> |
-    <router-link to="/contact">Contact</router-link>
+    <router-link to="/home"> <span class="material-symbols-outlined">
+home
+</span>Home</router-link> |
+    <router-link to="/about"><span class="material-symbols-outlined">
+demography
+</span>About</router-link> |
+    <router-link to="/resume"><span class="material-symbols-outlined">
+code_blocks
+</span>Resume</router-link> |
+    <router-link to="/testimonials"><span class="material-symbols-outlined">
+groups
+</span>Testimonials</router-link> |
+    <router-link to="/contact"><span class="material-symbols-outlined">
+call
+</span>Contact</router-link>
   </nav>
   <router-view/>
 
