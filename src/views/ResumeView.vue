@@ -4,7 +4,7 @@
       <h5>Resume | Education</h5>
     </div>
 
-      <div class="card" v-for="item in education" :key="item">
+      <div class="card animate__animated animate__rubberBand" v-for="item in education" :key="item">
         <div class="container">
         <img :src= "item.img" style="width: 160px; height:120px; border-radius:5px;">
         <h4> {{item.name}} <span class="material-symbols-outlined">
@@ -286,6 +286,11 @@ body {
   padding-left: 680px;
 }
 
+.projects {
+  display: grid;
+  grid-template-rows: 1fr ;
+}
+
 .projects .card {
   height: 400px;
   margin-bottom: 100px;
@@ -336,7 +341,7 @@ body {
 }
 .bootstrap-logo {
   margin-left: 400px;
-  margin-bottom: 0px;
+  margin-bottom: 10px;
 }
 
 .bootstrap-logo h3 {
@@ -344,7 +349,7 @@ body {
 }
 
 svg {
-  margin-left: 230px;
+  margin-left: 200px;
   width: 100px;
 }
 

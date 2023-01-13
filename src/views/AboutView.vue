@@ -75,7 +75,11 @@ export default {
 
 <style scoped>
 
-
+.aboutPage {
+  background-image: url(https://i.postimg.cc/sDnPt2cm/360-F-116611375-24-YKo-WE4kwk6o-Cue-N0cz-C1p4iuo0uz-Tm.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }

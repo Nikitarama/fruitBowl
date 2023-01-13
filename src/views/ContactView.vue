@@ -35,16 +35,20 @@
 .form {
   margin-top: 100px;
   margin-left: 500px;
+  padding: 30px;
+  border-radius: 30px;
   width: 600px;
+  background-color: powderblue;
 }
 
 .form h1 {
   margin-bottom: 10px;
   padding-left: 100px;
   font-size: 50px;
-  background-color: rgb(183, 107, 238);
-  border: 5px solid rgb(200, 121, 255);
+  background-color: rgba(107, 238, 192, 0.995);
+  border: 3px solid rgba(121, 244, 255, 0.823);
   color: aliceblue;
+  border-radius: 20px;
 }
 
 </style>

@@ -20,12 +20,14 @@ call
 
   <footer class="footer-icons">
                 <p>Nikita Ramawoothar © | 2023</p>
+              <div class="animate_animated animate__bounceIn">
                 <a href="#"><i class="fab-fa-twitter"></i></a>
                 <a href="#"><i class="fab fa-twitch"></i></a>
                 <a href="#"><i class="fab fa-linkedin-in"></i></a> 
                 <a href="#"><i class="fab fa-instagram"></i></a>
                 <a href="#"><i class="fab fa-github"></i></a>
-  </footer>
+              </div>
+</footer>
 
 </template>
 
@@ -36,10 +38,13 @@ call
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  
 }
+
 
 body {
   overflow:hidden;
+  
 }
 
 nav {
@@ -62,14 +67,17 @@ footer {
   margin-top: 20px;
   margin-left: 0px;
   background-color: rgb(215, 231, 245);
+  position: sticky;
+  z-index: 2;
+
 }
 
 .footer-icons a {
-  margin: -800px;
+  margin: 0px;
   margin-top: 0px;
   font-size: 25px;
-  margin-left: 675px;
-  padding: -0px;
+  margin-left: 128px;
+  
 }
 
 </style>
