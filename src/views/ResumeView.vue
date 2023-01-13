@@ -7,10 +7,10 @@
       <div class="card animate__animated animate__rubberBand" v-for="item in education" :key="item">
         <div class="container">
         <img :src= "item.img" style="width: 160px; height:120px; border-radius:5px;">
-        <h4> {{item.name}} <span class="material-symbols-outlined">
+        <h4> <span class="material-symbols-outlined">
               school
-            </span></h4>
-        <p> {{item.text}}</p>
+            </span> {{item.name}} </h4>
+        <p> - {{item.text}}</p>
       </div>      
     
       </div>
@@ -22,16 +22,32 @@
         <br>
   <div class="projects">
     <h3>Past Projects</h3>
-  
-    <div class="card" v-for="item in projects" :key="item">
-            <img :src= "item.img" style="width:500px; height:300px;">
+  <div class="row">
+    <div class="container col-md-6 d-flex">
+          <div class="card "  v-for="item in projects" :key="item">
+            <img :src= "item.img" style="width:350px; height:500px;">
             
                 <h5><b> {{item.name}}</b></h5>
                 <p> {{item.text}}</p>
                 <button class="open">Open</button>
             
+          </div>
     </div>
+  </div> 
   </div>
+
+  <!-- <div class="row">
+    <div class="container col-md-3 d-flex">
+          <div class="card "  v-for="item in projects" :key="item">
+            <img :src= "item.img" style="width:350px; height:500px;">
+            
+                <h5><b> {{item.name}}</b></h5>
+                <p> {{item.text}}</p>
+                <button class="open">Open</button>
+            
+          </div>
+    </div>
+  </div> -->
 
   <br>
 
@@ -200,6 +216,11 @@ export default {
     name: "A portfolio",
     text: "I created a portfolio in the first month at the coding bootcamp with only HTML, CSS and Bootstrap",
     img: "https://i.postimg.cc/x8CfZYWH/2022-12-27-2.png"
+  },
+  {
+    name: "A portfolio",
+    text: "I created a portfolio in the first month at the coding bootcamp with only HTML, CSS and Bootstrap",
+    img: "https://i.postimg.cc/x8CfZYWH/2022-12-27-2.png"
   }
     ]
   }},
@@ -214,8 +235,17 @@ export default {
 <style scoped>
 
 body {
-  overflow: hidden;
+  font-family: 'Times New Roman', Times, serif;
 }
+
+body {
+  -webkit-overflow-scrolling: hidden;
+}
+
+.container {
+  width: 100% !important;
+}
+
 .card {
     background-color: rgb(200, 121, 255);
     box-shadow: 0 0px 5px black;
@@ -226,6 +256,10 @@ body {
     margin-bottom: 20px;
     margin-left: 450px;
     color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
 }
 .card:hover {
     box-shadow: 0 0px 10px 0 black;
@@ -233,15 +267,16 @@ body {
 
 .education {
   display: flex;
-  margin-left: 3px;
+  padding-left: 30px;
   
   border: px solid rgb(78, 219, 186);
   background-color: rgb(200, 121, 255);
+
 }
 
 .education h5 {
   color:white;
-  font-size: 40px;
+  font-size: 30px;
   margin-left: 580px;
 }
 
@@ -261,9 +296,9 @@ body {
   
 }
 
-.card img {
-  margin: 5px;
+.education .container .card img {
   margin-left: 200px;
+  width: 100%;
 }
 
 .CV img {
@@ -275,25 +310,27 @@ body {
 .CV h3 {
   border: 2px solid  rgb(200, 121, 255);
   background-color:  rgb(200, 121, 255);
-  color: aliceblue;
+  color: white;
   padding-left: 640px;
 }
 
 .projects h3 {
   border: 2px solid  rgb(200, 121, 255);
   background-color:  rgb(200, 121, 255);
-  color: aliceblue;
+  color: white;
   padding-left: 680px;
 }
 
 .projects {
-  display: grid;
-  grid-template-rows: 1fr ;
+  display: row;
+ 
 }
 
 .projects .card {
   height: 400px;
+  width: 550rem;
   margin-bottom: 100px;
+  margin-left: 30px;
   border-radius: 0px;
   background-color: rgb(200, 121, 255);
 }
@@ -302,7 +339,8 @@ body {
   width: 70px;
   height:50px;
   margin-top: 30px;
-  margin-left: 280px;
+  margin-bottom: 20px;
+  margin-left: 190px;
   color: cadetblue;
   border: 0px solid grey;
 }

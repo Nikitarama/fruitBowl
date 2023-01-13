@@ -1,9 +1,9 @@
 <template>
     <div class="test">
     <div class="card" v-for="item in testimonials" :key="item">
-            <img :src= "item.img" style="width:298px; height:200px;">
+            <img :src= "item.img" style="width:200px; height:200px; border-radius: 100px;">
             <div class="container">
-                <h3><b> {{item.title}}</b></h3>
+                <h3><b> {{item.name}}</b></h3>
                 <p> {{item.text}}</p>
             </div>
     </div>
@@ -21,37 +21,37 @@ export default {
     return {
  testimonials : [
     {
-      name: "Plumstead High School | 2010-2014",
-      text: "The subjects I did at high-school were: Business Studies, History and Geography.",
-      img: "https://i.postimg.cc/vBx3z85c/Plumstead-logo-254x300.gif"
+      name: "Zoe Daniels",
+      text: " Nikita is a hard working lady with a big heart. She is organised, efficient and extremely competent with excellent rapport with people of all ages.",
+      img: "https://i.postimg.cc/zBnph3Bn/IMG-20221104-090808.jpg"
 
     }, 
     {
-      name: "University of the Western Cape  | 2015-2022",
-      text: "At University I double majored with History and Psychology. I thereafter obtained an Honours Degree in History, as well as my Masters the following year.",
-      img: "https://i.postimg.cc/VLY0yGrL/UWClogo.jpg"
+      name: "Mu'eed Brown",
+      text: "Nikita is a great person to work with. Her creative mind can get you some of the best results on web development.",
+      img: "https://i.postimg.cc/02bLFdHj/mueed.jpg"
     },
     {
-      name: "Life Choices  | 2022-2023",
-      text: "I then joined the Life Choices bootcamp Academywhere I learnt how to code professionally, as well aslearning the basics of software and web development.",
-      img: "https://i.postimg.cc/FHcP4VFP/LIFE-CHOICES-ACADEMY-LOGO-ON-BLUE-removebg-preview.png"
+      name: "Aneeqa Brown",
+      text: "Nikita is a highly thought intellectual from my perspective. She is not only hardworking but ambitious to recreate her vision exactly as thought of.",
+      img: "https://i.postimg.cc/C1xvDS35/aneqa.jpg"
     },
     {
-      name: "Plumstead High School | 2010-2014",
-      text: "The subjects I did at high-school were: Business Studies, History and Geography.",
-      img: "https://i.postimg.cc/vBx3z85c/Plumstead-logo-254x300.gif"
+      name: "Xolelwa Manqina",
+      text: "She exhibits exceptional creativity and determination. She has a efficient work ethic and always produces sophisticated projects to the best of her ability.",
+      img: "https://i.postimg.cc/hvkWpXnp/xolelwa.jpg"
 
     }, 
     {
-      name: "Plumstead High School | 2010-2014",
-      text: "The subjects I did at high-school were: Business Studies, History and Geography.",
-      img: "https://i.postimg.cc/vBx3z85c/Plumstead-logo-254x300.gif"
+      name: "Abdul Azeez Kemp",
+      text: "Nikita is a wonderful person, great to work with, always puts her 100% effort into working and a great team player.",
+      img: "https://i.postimg.cc/sgFGZmkZ/azeez.jpg"
 
     }, 
     {
-      name: "Plumstead High School | 2010-2014",
+      name: "Ryan Thomas",
       text: "The subjects I did at high-school were: Business Studies, History and Geography.",
-      img: "https://i.postimg.cc/vBx3z85c/Plumstead-logo-254x300.gif"
+      img: "https://i.postimg.cc/8CkX9cMp/ryan-thomas.jpg"
 
     }
   ]
@@ -64,6 +64,18 @@ export default {
 
 
 <style scoped>
+
+.test .card {
+    margin: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    background-image: url(https://i.postimg.cc/sDnPt2cm/360-F-116611375-24-YKo-WE4kwk6o-Cue-N0cz-C1p4iuo0uz-Tm.jpg);
+    background-size: cover;
+    height: 300px;
+    width: auto;
+}
+
 
 
 

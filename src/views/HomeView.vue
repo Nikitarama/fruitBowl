@@ -31,9 +31,7 @@ body {
   background-image: url(https://i.postimg.cc/sDnPt2cm/360-F-116611375-24-YKo-WE4kwk6o-Cue-N0cz-C1p4iuo0uz-Tm.jpg);
 }
 
-h2 {
-  color:lime;
-}
+
 
 .name {
     margin: 100px;
@@ -55,7 +53,7 @@ img {
     height:300px;
     z-index: 1;
     border-radius: 200px;
-   box-shadow: 0 0 20px;
+    box-shadow: 0 0 20px;
 }
 
 .name h1 {
@@ -80,7 +78,7 @@ img {
 }
 
 #circle {
-    margin-left: 450px;
+    margin-left: 470px;
     margin-top: 280px;
     width: 450px;
     height: 160px;
