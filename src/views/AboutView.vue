@@ -2,6 +2,7 @@
 <div class="aboutPage">
   <img src="../assets/nikita_instg.jpg" style="width:300px; height: 300px;" > 
   
+  
   <div class= "aboutMe">
     
             <h1>| About Me</h1>
@@ -80,20 +81,16 @@ export default {
 
 <style scoped>
 
-.aboutPage {
-  background-image: url(https://i.postimg.cc/sDnPt2cm/360-F-116611375-24-YKo-WE4kwk6o-Cue-N0cz-C1p4iuo0uz-Tm.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
   
   .aboutPage img {
     margin-top: 30px;
-    
     border-radius: 200px;
   }
+
 
   .container {
     
@@ -109,7 +106,6 @@ export default {
   }
   
   .card p {
-    
     font-size: 14px;
   }
   
@@ -124,7 +120,11 @@ export default {
     margin: 100px;
     padding: 30px;
     box-shadow: 0 2px 8px 0;
+    background-image: url(https://i.postimg.cc/sDnPt2cm/360-F-116611375-24-YKo-WE4kwk6o-Cue-N0cz-C1p4iuo0uz-Tm.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
+    flex-direction: row;
   }
 
   .aboutMe {
@@ -137,6 +137,7 @@ export default {
     box-shadow: 0 0 5px black;
     border-radius: 10px;
     color:aliceblue;
+  
   }
 
   .aboutMe h1 {

@@ -1,5 +1,0 @@
-<template>
-    <hobbies></hobbies>
-
-
-</template>

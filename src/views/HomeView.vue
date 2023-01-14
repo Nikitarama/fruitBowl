@@ -16,13 +16,11 @@
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+// import HelloWorld from '@/components/HelloWorld.vue'
 
 export default {
   name: 'HomeView',
-  components: {
-    HelloWorld
-  }
+  
 }
 </script>
 
@@ -41,9 +39,7 @@ body {
     padding-bottom: 200px;
     position: relative;
     height: 40vh;
-    /* background-image: url(https://i.postimg.cc/sDnPt2cm/360-F-116611375-24-YKo-WE4kwk6o-Cue-N0cz-C1p4iuo0uz-Tm.jpg); z-index:-3; margin-top:100px; 
-    background-size:cover; */
-   
+    
     z-index: 3;
     background: radial-gradient(rgb(0, 0, 0) 10% 10%, transparent 15% 30% , lightsteelblue 40% 40%, transparent 70% 100%);
   }
