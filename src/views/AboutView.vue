@@ -1,6 +1,9 @@
 <template>
 <div class="aboutPage">
-  <div class="aboutMe">
+  <img src="../assets/nikita_instg.jpg" style="width:300px; height: 300px;" > 
+  
+  <div class= "aboutMe">
+    
             <h1>| About Me</h1>
             <p>I got into coding quite late in my life,
                 after having already studied something
@@ -25,7 +28,9 @@
                 game I'm trying to make using Blender and Unity, 
                 which has been challenging but super fun.
             </p>
-    </div>
+  </div>
+
+  
   
   <div class="about">
     <div class="card" v-for="item in hobbies" :key="item">
@@ -84,8 +89,10 @@ export default {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
   
-  img {
-    border-radius: 5px 5px 0 0;
+  .aboutPage img {
+    margin-top: 30px;
+    
+    border-radius: 200px;
   }
 
   .container {
@@ -94,7 +101,7 @@ export default {
   }
   .card {
     margin: 40px;
-  
+    
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     border-radius: 5px; 
@@ -106,12 +113,16 @@ export default {
     font-size: 14px;
   }
   
-  img {
+  .card img {
+    margin-top: -0px;
+    margin-left: 0.5px;
+    margin-bottom: 0px;
     border-radius: 5px 5px 0 0;
   }
 
   .aboutPage {
     margin: 100px;
+    padding: 30px;
     box-shadow: 0 2px 8px 0;
     display: flex;
   }

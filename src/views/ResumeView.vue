@@ -22,32 +22,20 @@
         <br>
   <div class="projects">
     <h3>Past Projects</h3>
-  <div class="row">
-    <div class="container col-md-6 d-flex">
+  <div class="row justify-content-center m-0">
+    <div class="col-sm-3">
           <div class="card "  v-for="item in projects" :key="item">
-            <img :src= "item.img" style="width:350px; height:500px;">
+            <img :src= "item.img">
             
                 <h5><b> {{item.name}}</b></h5>
                 <p> {{item.text}}</p>
-                <button class="open">Open</button>
+                <a :href="item.source"><button class="open">Open</button></a>
             
           </div>
     </div>
   </div> 
   </div>
 
-  <!-- <div class="row">
-    <div class="container col-md-3 d-flex">
-          <div class="card "  v-for="item in projects" :key="item">
-            <img :src= "item.img" style="width:350px; height:500px;">
-            
-                <h5><b> {{item.name}}</b></h5>
-                <p> {{item.text}}</p>
-                <button class="open">Open</button>
-            
-          </div>
-    </div>
-  </div> -->
 
   <br>
 
@@ -163,7 +151,7 @@
      
       
        
-        <div class="progress" style="width:80vh; margin-left: 16px;  margin-top: -20px;">
+        <div class="progress" style="width:80vh; margin-left: 10px;  margin-top: -20px;">
           <div class="progress-bar progress-bar-striped active bg-secondary progress-bar-animated" role="progressbar"
             aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:85%">
             85%
@@ -204,23 +192,39 @@ export default {
   projects : [
   {
     name: "A calculator",
-    text: "I built a calculator with only JS",
-    img: "https://i.postimg.cc/D0JVsz9C/2022-12-27-1.png"
+    text: "I built a calculator with only Javascript",
+    img: "https://i.postimg.cc/D0JVsz9C/2022-12-27-1.png",
+    source: "https://stately-narwhal-b20252.netlify.app"
   },
   {
     name: "An ecommerce site",
-    text: "I designed a fully functional ecom site for vintage cars",
-    img: "https://i.postimg.cc/W4h7sJgf/2022-12-27.png"
+    text: "I designed a functional ecom website for vintage cars",
+    img: "https://i.postimg.cc/W4h7sJgf/2022-12-27.png",
+    source: "https://papaya-piroshki-6e1f7d.netlify.app"
   },
   {
     name: "A portfolio",
-    text: "I created a portfolio in the first month at the coding bootcamp with only HTML, CSS and Bootstrap",
-    img: "https://i.postimg.cc/x8CfZYWH/2022-12-27-2.png"
+    text: "I created a portfolio in the first month at my coding bootcamp with only HTML, CSS and Bootstrap",
+    img: "https://i.postimg.cc/x8CfZYWH/2022-12-27-2.png",
+    source: "https://nikita-work-profile.netlify.app"
   },
   {
-    name: "A portfolio",
-    text: "I created a portfolio in the first month at the coding bootcamp with only HTML, CSS and Bootstrap",
-    img: "https://i.postimg.cc/x8CfZYWH/2022-12-27-2.png"
+    name: "My very first website",
+    text: "I created a website in the first week at the coding bootcamp with only HTML and CSS",
+    img: "https://i.postimg.cc/15Bm5jC5/first-webpage.png",
+    source: "https://tranquil-biscochitos-6d2db1.netlify.app"
+  },
+  {
+    name: "A Blockbuster website",
+    text: "I created a Blockbuster website from a Netflix clone with only HTML and CSS",
+    img: "https://i.postimg.cc/rFmbxZyp/blockbuster-web.png",
+    source: "https://serene-liger-0ab87c.netlify.app"
+  },
+  {
+    name: "My most recent Portfolio",
+    text: "i created a Portfolio halfway through my coding course after learning HTML, CSS and Javascript.",
+    img: "https://i.postimg.cc/wxSfRqrw/recent-portfolio.png",
+    source: "https://bucolic-pika-c25cb8.netlify.app"
   }
     ]
   }},
@@ -242,9 +246,6 @@ body {
   -webkit-overflow-scrolling: hidden;
 }
 
-.container {
-  width: 100% !important;
-}
 
 .card {
     background-color: rgb(200, 121, 255);
@@ -321,26 +322,24 @@ body {
   padding-left: 680px;
 }
 
-.projects {
-  display: row;
- 
-}
 
 .projects .card {
-  height: 400px;
-  width: 550rem;
-  margin-bottom: 100px;
-  margin-left: 30px;
+  height: 500px;
+  max-width: 650px;
+  margin-bottom: 50px;
+  margin-left: -100px;
   border-radius: 0px;
+  justify-content: center;
   background-color: rgb(200, 121, 255);
 }
 
 .projects button {
   width: 70px;
-  height:50px;
+  height:35px;
   margin-top: 30px;
   margin-bottom: 20px;
-  margin-left: 190px;
+  margin-left: 0px;
+  border-radius: 50px;
   color: cadetblue;
   border: 0px solid grey;
 }
@@ -363,8 +362,9 @@ body {
 .projects img {
   margin: 20px;
   margin-top: 50px;
-  margin-left: 50px;
-  width: 300px;
+  margin-left: 15px;
+  width: 550px;
+  height: 500px;
 }
 
 #skillCard, .progress {

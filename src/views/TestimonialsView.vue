@@ -38,7 +38,7 @@ export default {
     },
     {
       name: "Xolelwa Manqina",
-      text: "She exhibits exceptional creativity and determination. She has a efficient work ethic and always produces sophisticated projects to the best of her ability.",
+      text: "Nikita exhibits exceptional creativity and determination. She has a efficient work ethic and always produces sophisticated projects to the best of her ability.",
       img: "https://i.postimg.cc/hvkWpXnp/xolelwa.jpg"
 
     }, 
@@ -50,7 +50,7 @@ export default {
     }, 
     {
       name: "Ryan Thomas",
-      text: "The subjects I did at high-school were: Business Studies, History and Geography.",
+      text: "Nikita is hard working and her biggest trait is resilience. She thrives under pressure and always gives her 100% best to complete any task at hand.",
       img: "https://i.postimg.cc/8CkX9cMp/ryan-thomas.jpg"
 
     }

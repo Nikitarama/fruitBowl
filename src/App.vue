@@ -76,7 +76,7 @@ footer {
   margin: 0px;
   margin-top: 0px;
   font-size: 25px;
-  margin-left: 128px;
+  margin-left: 145px;
   
 }
 
