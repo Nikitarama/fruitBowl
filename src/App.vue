@@ -1,6 +1,6 @@
 <template>
   <nav>
-    <router-link to="/home"> <span class="material-symbols-outlined">
+    <router-link to="/"> <span class="material-symbols-outlined">
 home
 </span>Home</router-link> |
     <router-link to="/about"><span class="material-symbols-outlined">
